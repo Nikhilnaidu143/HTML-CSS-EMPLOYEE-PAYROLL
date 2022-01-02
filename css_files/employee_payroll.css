@@ -79,7 +79,7 @@ label {
     font-size: larger;
 }
 .text {
-    font-size: 8px;
+    font-size: small;
     color: black;
     opacity: 1;
     font-family: Roboto;
