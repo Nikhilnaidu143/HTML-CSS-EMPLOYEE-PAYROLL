@@ -75,4 +75,5 @@ class EmployeePayrollData {
             throw "Start date cannot be less than 30 days.";
         }
     }
+    
 }

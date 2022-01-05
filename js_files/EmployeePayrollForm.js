@@ -57,6 +57,21 @@ function saveEmployeePayrollForm(){
         }
     });
     employeePayrollData.department = department;
+
+    // Setting id .
+    var id = localStorage.getItem("currentID");
+    if(id == null){
+        localStorage.setItem("currentID" , 1);
+        console.log("if id :- " + 1);
+        return 2;
+    }
+    else{
+        id = parseInt(id) + 1;
+        localStorage.setItem("currentID" , id);
+        console.log("else id :- " + id);
+        return id;
+    }
+
 };
 
 function submitEmployeeForm(){
