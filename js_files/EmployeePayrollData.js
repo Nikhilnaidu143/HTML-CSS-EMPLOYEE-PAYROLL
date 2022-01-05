@@ -12,12 +12,8 @@ class EmployeePayrollData {
     }
     set name(name) {
         let nameRegex = /^[A-Z][A-Z a-z]{3,}$/;
-        if (nameRegex.test(name)){
-            this._name = name;
-        }
-        else{ 
-            throw "Name is incorrect!";
-        }
+        if (nameRegex.test(name)) this._name = name;
+        else throw "Name is incorrect!";
     }
 
     get profilePic() {
@@ -40,7 +36,7 @@ class EmployeePayrollData {
     set department(department) {
         this._department = department;
     }
-    
+
     get salary() {
         return this._salary;
     }
@@ -58,7 +54,6 @@ class EmployeePayrollData {
     get startDate() {
         return this._startDate;
     }
-
     set startDate(startDate) {
         let now = new Date();
         if (startDate > now) throw "Start Date is a Future Date!";

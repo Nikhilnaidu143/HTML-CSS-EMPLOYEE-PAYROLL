@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Employee Payroll Form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css_files/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Employee Payroll App</title>
 </head>
 <body>
+    <!--UC1-->
     <header class="header-content header">
-        <div class="logo-content">
-            <img src="../assets/images/logo.png" alt="">
-                <div>
-                    <span class="emp-text">EMPLOYEE</span><br>
-                    <span class="emp-text emp-payroll">PAYROLL</span>
-                </div>
-        </div>
+      <div class="logo-content">
+          <img src="../assets/images/logo.png" alt="">
+          <div>
+              <span class="emp-text">EMPLOYEE</span><br>
+              <span class="emp-text emp-payroll">PAYROLL</span>
+          </div>
+      </div>
     </header>
-
     <div class="main-content">
-            <div class="header-content">
-                <div class="emp-detail-text">
-                    Employee Details
-                <div class="emp-count">1</div>
+    <!--UC2-->
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details
+                <div class="emp-count">10</div>
             </div>
-                <a href="../html_files/employee_payroll.html" class="add-button">
-                    <img src="../assets/icons/add-24px.svg" alt="">ADD USER</a>
-    </div>     
-    
-    <table id="display" class="table">
-        
-    </table>
-
-    <script type="text/javascript" src="../js_files/home.js"></script>
+            <a href="../html_files/employee_payroll.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="">ADD USER</a>
+        </div>
+        <!-- header-content -->
+        <div class="table-main">
+            <table id="table-display" class="table">
+            <!--UC3-->
+            </table>
+        </div>
+    </div>
+    <script src="../js_files/home.js"></script>
+    <script src="../js_files/Utility.js"></script>
+    <script src="../js_files/EmployeePayrollData.js"></script>
 </body>
+</html>

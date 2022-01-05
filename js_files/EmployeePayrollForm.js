@@ -9,8 +9,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         try {
             (new EmployeePayrollData()).name = name.value;
             textError.textContent = " ";
-        } catch (invalidName) {
-            textError.textContent = invalidName;
+        } catch (e) {
+            textError.textContent = e;
         }
     });
 
@@ -20,7 +20,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     salary.addEventListener('input', function() {
         output.textContent = salary.value;
     });
-});
+
+}); 
 
 const save = () => {
     try {
