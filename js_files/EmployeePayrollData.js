@@ -54,4 +54,25 @@ class EmployeePayrollData {
     set note(note) {
         this._note = note;
     }
+    
+    get startDate() {
+        return this.startDateValue;
+    }
+
+    set startDate(startDate) {
+        let date = startDate.split("/");
+        let todayDate = new Date();
+        let employeeDate = new Date(date[2], date[1]-1 , date[0]);
+        
+        var diff = (todayDate.getTime() - employeeDate.getTime() );
+        if(employeeDate > todayDate){
+            throw "start date cannot be future date."
+        }
+        if( diff < (30 * 24 * 60 * 60 * 1000) && diff > 0 ) {
+            this.startDateValue = startDate;
+        }
+        else {
+            throw "Start date cannot be less than 30 days.";
+        }
+    }
 }

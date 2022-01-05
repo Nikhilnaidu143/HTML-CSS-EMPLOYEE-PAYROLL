@@ -147,7 +147,7 @@ button {
 .submitButton {
     border: 1px solid #707070;
     margin-right: 30px;
-    border-radius: 15%;
+    border-radius: 15px;
     font-size: medium;
 } 
 .cancelButton {
@@ -158,7 +158,7 @@ button {
 }
 .resetButton{
     font-size: medium;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 @media screen and (max-width: 857px) {
     .submitButton {
@@ -167,5 +167,8 @@ button {
     }
 } 
 .text-error{
+    color: red;
+}
+#error-date{
     color: red;
 }
