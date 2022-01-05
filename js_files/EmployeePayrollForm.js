@@ -25,13 +25,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 function saveEmployeePayrollForm(){
     let employeePayrollData = new EmployeePayrollData;
 
-    try{
-        employeePayrollData.name = document.querySelector('#name').value;
-    }
-    catch(e){
-        console.log(e);
-    }
-
     let profile = document.querySelector('input[name="profile"]:checked');
     if(profile != null){
         employeePayrollData.profilePic = profile.value;
