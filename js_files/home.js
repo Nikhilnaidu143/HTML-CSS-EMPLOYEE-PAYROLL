@@ -48,6 +48,7 @@ const getDeptHtml = (deptList) => {
     return deptHtml;
 };
 
+/** DAY-46:- UC-1 */
 const remove = (node) => {
     console.log(node);
     let employeePayrollData = empPayrollList.find(
